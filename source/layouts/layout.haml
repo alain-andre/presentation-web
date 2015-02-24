@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title= current_page.data.title || "Alain ANDRE"
+    = stylesheet_link_tag 'all', :media => 'all'
+    = javascript_include_tag 'highlight.min'
+    = csrf_meta_tags
+  %body{"class" => "impress-not-supported"}
+    .container
+      .fallback-message
+        %p
+          Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.
+        %p
+          For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.
+      = yield

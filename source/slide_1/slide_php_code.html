@@ -1,0 +1,9 @@
+&lt;?php
+class Panier {
+  // Eléments de notre panier
+  var $items;
+  // Ajout de $num articles de type $artnr au panier
+  function add_item($artnr, $num) {
+    $this->items[$artnr] += $num;
+  }
+}

@@ -1,0 +1,24 @@
+---
+title: Présentation sur les origines du web et son avenir | Alain ANDRE
+---
+
+#impress
+  = partial 'slide_1/slide_presentation', :locals => {:x => -1000, :y => -20000, :z => 0}
+  = partial 'slide_1/slide_html',         :locals => {:x => 0,     :y => -20000, :z => 0}
+  = partial 'slide_1/slide_css',          :locals => {:x => 1000,  :y => -20000, :z => 0}
+  = partial 'slide_1/slide_javascript',   :locals => {:x => 2000,  :y => -20000, :z => 0}
+  = partial 'slide_1/slide_php',          :locals => {:x => 3000,  :y => -20000, :z => 0}
+  = partial 'slide_1/slide_question1',    :locals => {:x => 4000,  :y => -20000, :z => 0}
+  
+.hint
+  %p
+    Utilisez la barre d'espace ou les flêches pour naviger
+
+= javascript_include_tag 'impress'
+
+:javascript 
+  if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+  }
+  impress().init();
+  hljs.initHighlightingOnLoad();
