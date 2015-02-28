@@ -6,4 +6,4 @@ before_install:
   - gem update --system
   - gem install middleman hitimes
 install: bundle install
-script: middleman build
+script: bundle exec middleman build
