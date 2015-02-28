@@ -1,6 +1,11 @@
 language: ruby
+
 rvm:
   - 2.0.0
   - 1.9.3
-script: bundle install
+  
+before_install:
+  - gem update --system
+  
+install: gem install middleman hitimes
 script: middleman build
