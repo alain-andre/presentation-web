@@ -6,6 +6,7 @@ Elle a pour objectif de présenter les origines du web et son avenir sur un supp
 # Installation
 
 [![Code Climate](https://codeclimate.com/github/alain-andre/presentation-web/badges/gpa.svg)](https://codeclimate.com/github/alain-andre/presentation-web)
+[![Build Status](https://secure.travis-ci.org/alain-andre/presentation-web.png)](http://travis-ci.org/alain-andre/presentation-web)
 
 ```
 git clone https://github.com/alain-andre/presentation-web.git
