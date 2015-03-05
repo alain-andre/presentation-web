@@ -1,7 +1,12 @@
 language: ruby
-
 rvm:
-  - 2.0.0
-  - 1.9.3
-
+- 2.0.0
+- 1.9.3
 script: bundle exec middleman build
+deploy:
+  provider: heroku
+  api_key:
+    secure: DkMBDgmZtiI8leX0IyyQ/xiY1MdNXuOd6fnCihqJA8KK2YMluZqbWNnTkWxkhAsEApSLd1oxzsZ8XTMkcsefsNXyRbHHbzXmO7C7iUaxFQpop8A58C1iO9Yy/WyaPSRbvdi2u7el47sYNfxLhOMXax3WvAz0sYKN+AlTYn1YWvk=
+  app: presentation-web
+  on:
+    repo: alain-andre/presentation-web
