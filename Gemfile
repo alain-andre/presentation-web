@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
+gem 'rack-contrib'
 
 gem "middleman", "~>3.3.9"
 
