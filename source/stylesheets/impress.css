@@ -168,7 +168,7 @@ p {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -684,11 +684,9 @@ p {
 */
 
 .step.active.modern p {
-    transition-property: box-shadow background-color;
+    transition-property: box-shadow;
     transition-delay: 1s;
     transition-duration: 1s;
-    background: #CEC3A4;
-    background-image: url("images/header-background.png");
 
     -moz-box-shadow: 0 0 .1em gray;
     -webkit-box-shadow: 0 0 .1em gray;
