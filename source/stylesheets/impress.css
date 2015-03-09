@@ -103,6 +103,10 @@ p {
     text-align: justify;
     padding: .2em;
 }
+.modern p {
+    font-size: .7em;
+}
+
 
 /*
     Because the main point behind the impress.js demo is to demo impress.js
