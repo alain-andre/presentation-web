@@ -3,7 +3,8 @@ title: Présentation sur les origines du web et son avenir | Alain ANDRE
 ---
 
 #impress
-  = partial 'slide_1/slide_presentation', :locals => {:x => -1000, :y => -20000, :z => 0}
+  = partial 'slide_1/slide_presentation', :locals => {:x => -2000, :y => -20000, :z => 0}
+  = partial 'slide_1/slide_concept',      :locals => {:x => -1000, :y => -20000, :z => 0}
   = partial 'slide_1/slide_html',         :locals => {:x => 0,     :y => -20000, :z => 0}
   = partial 'slide_1/slide_css',          :locals => {:x => 1000,  :y => -20000, :z => 0}
   = partial 'slide_1/slide_javascript',   :locals => {:x => 2000,  :y => -20000, :z => 0}
@@ -24,8 +25,9 @@ title: Présentation sur les origines du web et son avenir | Alain ANDRE
   // slides 3
   = partial 'slide_3/slide_presentation', :locals => {:x => 2000,  :y => 7000, :z => 900,  :rotate => 180, :scale => 10}
   = partial 'slide_3/slide_framework',    :locals => {:x => 4000,  :y => 8000, :z => -100, :rotate => 180, :scale => 3}
-  = partial 'slide_3/slide_generateur',   :locals => {:x => 4000,  :y => 9000, :z => -100, :rotate => 180, :scale => 3}
-  = partial 'slide_3/slide_haml',         :locals => {:x => 4000,  :y => 10000,:z => -100, :rotate => 180, :scale => 3}
+  = partial 'slide_3/slide_structure',   :locals => {:x => 4000,  :y => 9000, :z => -100, :rotate => 180, :scale => 3}
+  = partial 'slide_3/slide_repetition',         :locals => {:x => 4000,  :y => 10000,:z => -100, :rotate => 180, :scale => 3}
+  = partial 'slide_3/slide_convention',         :locals => {:x => 4000,  :y => 10000,:z => -100, :rotate => 180, :scale => 3}
   
 .hint
   %p

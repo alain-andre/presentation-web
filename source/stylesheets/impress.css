@@ -682,13 +682,3 @@ p {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
-
-.step.active.modern p {
-    transition-property: box-shadow;
-    transition-delay: 1s;
-    transition-duration: 1s;
-
-    -moz-box-shadow: 0 0 .1em gray;
-    -webkit-box-shadow: 0 0 .1em gray;
-    box-shadow: 0 0 .1em gray;
-}
