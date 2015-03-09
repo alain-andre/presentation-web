@@ -1,9 +1,7 @@
-&lt;?php
-class Panier {
-  // Eléments de notre panier
-  var $items;
-  // Ajout de $num articles de type $artnr au panier
-  function add_item($artnr, $num) {
-    $this->items[$artnr] += $num;
-  }
-}
+&lt;select&gt;
+    &lt;?php foreach($array as $key=&gt;$value): ?&gt;
+    &lt;option&gt;
+        &lt;?php echo $key; ?&gt;
+    &lt;/option&gt;
+    &lt;?php endforeach; ?&gt;
+&lt;/select&gt;
