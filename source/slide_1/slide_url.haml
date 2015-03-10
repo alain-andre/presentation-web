@@ -1,28 +1,69 @@
-.step.slide{ "id" => "concept", "data-x" => locals[:x], "data-y" => locals[:y] }
+.step.slide{ "id" => "url", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+.step.slide{ "id" => "url-besoin", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
+  %p
+    Pour cela elle a besoin :
+.step.slide{ "id" => "url-protocole", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
   %b
-    URL
+    D'un protocole (HTTP, HTTPS, FTP) :
   %p
-    L'Uniform Resource Locator est ce que l'on nomme de façon informelle une 
     %b
-      adresse web.
-    Elle permet de demander une ressource sur un domaine World Wide Web.
-  %pre.center
-    %code{"class" => "html"}= http://Jojo:lApIn@www.example.com:8888/chemin/d/acc%C3%A8s.php?q=req&q2=req2#signet
+      http://
+.step.slide{ "id" => "url-auth", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
+  %b 
+    De données d’authentification :
   %p
-    %ul
-      Elle est composée :
-      %li 
-        D'un protocole (HTTP, HTTPS, FTP)
-      %li 
-        De données d’authentification
-      %li 
-        Du nom de domaine du service
-      %li 
-        D'une indication de numéro de port 
-      %li 
-        Du nom complet de la ressource à demander sur le service une fois connecté 
-      %li 
-        Données supplémentaires optionnelles, transmises au service
-      %li 
-        Données supplémentaires optionnelles, pour l’exploitation de la ressource après son obtention par le logiciel client 
-    
+    http://
+    %b
+      Jojo:lApIn
+.step.slide{ "id" => "url-domaine", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
+  %b
+    Du nom de domaine du service :
+  %p
+    http://Jojo:lApIn@
+    %b
+      www.example.com
+.step.slide{ "id" => "url-port", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
+  %b
+    D'une indication de numéro de port :
+  %p
+    http://Jojo:lApIn@www.example.com
+    %b
+      \:8080
+.step.slide{ "id" => "url-port", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
+  %b
+    Du nom complet de la ressource à demander sur le service une fois connecté :
+  %p
+    http://Jojo:lApIn@www.example.com:8080
+    %b
+      \/chemin/d/acc%C3%A8s.php
+.step.slide{ "id" => "url-port", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
+  %b
+    De données supplémentaires optionnelles, transmises au service :
+  %p
+    http://Jojo:lApIn@www.example.com:8080/chemin/d/acc%C3%A8s.php
+    %b
+      ?q=req&q2=req2
+.step.slide{ "id" => "url-port", "data-x" => locals[:x], "data-y" => locals[:y] }
+  =partial 'slide_1/slide_url_main.haml'
+  %hr
+  %b
+    Données supplémentaires optionnelles, pour l’exploitation de la ressource après son obtention par le logiciel client :
+  %p
+    http://Jojo:lApIn@www.example.com:8080/chemin/d/acc%C3%A8s.php?q=req&q2=req2
+    %b
+      \#signet
