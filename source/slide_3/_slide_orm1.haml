@@ -1,0 +1,29 @@
+.step.modern{ "id" => "orm1", "data-x" => locals[:x], "data-y" => locals[:y], "data-rotate" => locals[:rotate], "data-scale" => locals[:scale] }
+  %p 
+    Cette technique permet d’écrire des 
+    %b
+      requêtes 
+    dans les modèles 
+    %b
+      une seule fois 
+    alors que l’application va utiliser 
+    %b
+      différentes 
+    base de données. 
+  %p
+    Par exemple, l’utilisation du 
+    %b
+      SqLite 
+    en 
+    %b
+      développement 
+    ou en test ne nécessitera aucune modification de code à la mise en 
+    %b
+      production 
+    sur du 
+    %b
+      PostgreSql.
+  %p
+    Exemple de récupération de tous les enregistrements de la table utilisateur et de leur stockage dans les models.
+  %pre.migration
+    %code{"class" => "ruby"}= partial 'slide_3/slide_orm_code.html'
