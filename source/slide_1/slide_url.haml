@@ -1,0 +1,28 @@
+.step.slide{ "id" => "concept", "data-x" => locals[:x], "data-y" => locals[:y] }
+  %b
+    URL
+  %p
+    L'Uniform Resource Locator est ce que l'on nomme de façon informelle une 
+    %b
+      adresse web.
+    Elle permet de demander une ressource sur un domaine World Wide Web.
+  %pre.center
+    %code{"class" => "html"}= http://Jojo:lApIn@www.example.com:8888/chemin/d/acc%C3%A8s.php?q=req&q2=req2#signet
+  %p
+    %ul
+      Elle est composée :
+      %li 
+        D'un protocole (HTTP, HTTPS, FTP)
+      %li 
+        De données d’authentification
+      %li 
+        Du nom de domaine du service
+      %li 
+        D'une indication de numéro de port 
+      %li 
+        Du nom complet de la ressource à demander sur le service une fois connecté 
+      %li 
+        Données supplémentaires optionnelles, transmises au service
+      %li 
+        Données supplémentaires optionnelles, pour l’exploitation de la ressource après son obtention par le logiciel client 
+    
